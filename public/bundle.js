@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/app.scss":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/app.scss ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"* {\\n  box-sizing: border-box; }\\n\\nbody {\\n  margin: 0;\\n  padding: 0;\\n  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; }\\n\\n.App {\\n  display: flex;\\n  flex-direction: column;\\n  align-items: center; }\\n\\nh1 {\\n  font-family: 'Quicksand', sans-serif;\\n  color: #345; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/app.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/card-list/card-list.styles.css":
 /*!**************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/card-list/card-list.styles.css ***!
@@ -94,6 +105,28 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".card-list {\\n  width: 85vw;\\n  margin: 0 auto;\\n  display: grid;\\n  grid-template-columns: 1fr 1fr 1fr 1fr;\\n  grid-gap: 20px; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/components/card-list/card-list.styles.css?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/card/card.styles.css":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/card/card.styles.css ***!
+  \****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".card-container {\\n  display: flex;\\n  flex-direction: column;\\n  background-color: #fafafa;\\n  /* border: 1px solid #ebedf3; */\\n  border-radius: 5px;\\n  padding: 25px;\\n  cursor: pointer;\\n  /* -moz-osx-font-smoothing: greyscale; */\\n  backface-visibility: hidden;\\n  transform: translateZ(0);\\n  transition: transform 0.25s ease-out; }\\n\\n.card-container:hover {\\n  transform: scale(1.05);\\n  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/components/card/card.styles.css?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/search-box/search-box.styles.css":
+/*!****************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/search-box/search-box.styles.css ***!
+  \****************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".search {\\n  -webkit-appearance: none;\\n  border: none;\\n  border-bottom: 1px solid #eee;\\n  outline: none;\\n  padding: 10px;\\n  width: 150px;\\n  line-height: 30px;\\n  margin-bottom: 30px; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/components/search-box/search-box.styles.css?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -282,7 +315,18 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_card_list_card_list_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/card-list/card-list-component */ \"./src/components/card-list/card-list-component.jsx\");\n\n\n\nclass App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor() {\n    super();\n    this.state = {\n      spots: []\n    };\n  }\n\n  componentDidMount() {\n    fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(users => this.setState({\n      spots: users\n    }));\n  }\n\n  render() {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"App\"\n    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_card_list_card_list_component__WEBPACK_IMPORTED_MODULE_1__[\"CardList\"], {\n      name: \"Kaai\"\n    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h1\", null, \"Kaai\"), \" \"), this.state.spots.map(spot => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", {\n      key: spot.id\n    }, spot.address.city)));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./src/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_card_list_card_list_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/card-list/card-list-component */ \"./src/components/card-list/card-list-component.jsx\");\n/* harmony import */ var _components_search_box_search_box_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/search-box/search-box-component */ \"./src/components/search-box/search-box-component.jsx\");\n/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.scss */ \"./src/app.scss\");\n/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_app_scss__WEBPACK_IMPORTED_MODULE_3__);\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nclass App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {\n  constructor() {\n    super();\n\n    _defineProperty(this, \"handleChange\", event => {\n      this.setState({\n        searchField: event.target.value\n      });\n    });\n\n    this.state = {\n      spots: [],\n      searchField: ''\n    }; // needs to bind it because JS by default doesn't set scope of this functions\n\n    this.handleChange = this.handleChange.bind(this);\n  }\n\n  componentDidMount() {\n    fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(users => this.setState({\n      spots: users\n    }));\n  }\n\n  render() {\n    // here can apply function to add some features to the initial state\n    const {\n      spots,\n      searchField\n    } = this.state;\n    const filteredSpots = spots.filter(spot => spot.name.toLowerCase().includes(searchField.toLowerCase()));\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      className: \"App\"\n    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h1\", null, \"Breathtaking Sceneries\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_search_box_search_box_component__WEBPACK_IMPORTED_MODULE_2__[\"SearchBox\"], {\n      placeholder: \"Search Spots\" // needs to specify with this since handleChange is inside this class\n      ,\n      handleChange: this.handleChange\n    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_card_list_card_list_component__WEBPACK_IMPORTED_MODULE_1__[\"CardList\"], {\n      spots: filteredSpots\n    }));\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./src/App.js?");
+
+/***/ }),
+
+/***/ "./src/app.scss":
+/*!**********************!*\
+  !*** ./src/app.scss ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/lib/loader.js!./app.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/app.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/app.scss?");
 
 /***/ }),
 
@@ -294,7 +338,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"CardList\", function() { return CardList; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _card_list_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./card-list.styles.css */ \"./src/components/card-list/card-list.styles.css\");\n/* harmony import */ var _card_list_styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_card_list_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst CardList = props => {\n  // console.log(props);\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"card-list\"\n  }, props.children);\n};\n\n//# sourceURL=webpack:///./src/components/card-list/card-list-component.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"CardList\", function() { return CardList; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _card_card_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../card/card.component */ \"./src/components/card/card.component.jsx\");\n/* harmony import */ var _card_list_styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./card-list.styles.css */ \"./src/components/card-list/card-list.styles.css\");\n/* harmony import */ var _card_list_styles_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_card_list_styles_css__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nconst CardList = props => {\n  // console.log(props);\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"card-list\"\n  }, props.spots.map(spot => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_card_card_component__WEBPACK_IMPORTED_MODULE_1__[\"Card\"], {\n    key: spot.id,\n    spot: spot\n  })));\n};\n\n//# sourceURL=webpack:///./src/components/card-list/card-list-component.jsx?");
 
 /***/ }),
 
@@ -306,6 +350,52 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js!./card-list.styles.css */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/card-list/card-list.styles.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/card-list/card-list.styles.css?");
+
+/***/ }),
+
+/***/ "./src/components/card/card.component.jsx":
+/*!************************************************!*\
+  !*** ./src/components/card/card.component.jsx ***!
+  \************************************************/
+/*! exports provided: Card */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Card\", function() { return Card; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _card_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./card.styles.css */ \"./src/components/card/card.styles.css\");\n/* harmony import */ var _card_styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_card_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst Card = props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n  className: \"card-container\"\n}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"img\", {\n  alt: \"spots\",\n  src: `https://picsum.photos/id/1${props.spot.id}/200`\n}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, props.spot.address.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, props.spot.website));\n\n//# sourceURL=webpack:///./src/components/card/card.component.jsx?");
+
+/***/ }),
+
+/***/ "./src/components/card/card.styles.css":
+/*!*********************************************!*\
+  !*** ./src/components/card/card.styles.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js!./card.styles.css */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/card/card.styles.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/card/card.styles.css?");
+
+/***/ }),
+
+/***/ "./src/components/search-box/search-box-component.jsx":
+/*!************************************************************!*\
+  !*** ./src/components/search-box/search-box-component.jsx ***!
+  \************************************************************/
+/*! exports provided: SearchBox */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SearchBox\", function() { return SearchBox; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _search_box_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./search-box.styles.css */ \"./src/components/search-box/search-box.styles.css\");\n/* harmony import */ var _search_box_styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_search_box_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst SearchBox = ({\n  placeholder,\n  handleChange\n}) => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"input\", {\n  className: \"search\",\n  type: \"search\",\n  placeholder: placeholder,\n  onChange: handleChange\n});\n\n//# sourceURL=webpack:///./src/components/search-box/search-box-component.jsx?");
+
+/***/ }),
+
+/***/ "./src/components/search-box/search-box.styles.css":
+/*!*********************************************************!*\
+  !*** ./src/components/search-box/search-box.styles.css ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js!./search-box.styles.css */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/search-box/search-box.styles.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/search-box/search-box.styles.css?");
 
 /***/ }),
 
