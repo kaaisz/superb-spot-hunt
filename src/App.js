@@ -4,7 +4,8 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      spots: []
+      spots: [],
+      searchField: ''
     };
   }
 
@@ -17,6 +18,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <input type="search" placeholder="search spots" onChange={event => {
+            this.setState({searchField: event.target.value});
+            // console.log(this.state);
+          }}
+        />
         <CardList spots={this.state.spots}>
         </CardList>
       </div>
