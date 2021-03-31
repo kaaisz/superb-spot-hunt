@@ -4,17 +4,29 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      string: 'Hello Kaai'
+      spots: [
+        {
+          name: 'andarsia',
+          id: 'and1'
+        },
+        {
+          name: 'antelope',
+          id: 'ant1'
+        },
+        {
+          name: 'everest',
+          id: 'evr1'
+        },
+      ]
     };
   }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <p>{this.state.string}</p>
-          <button onClick={()=>this.setState({ string: 'Hello Suzuki' })}>Change text</button>
-        </header>
+        {
+          this.state.spots.map(spot => <p key={spot.id}>{ spot.name }</p>)
+        }
       </div>
     )
   }
