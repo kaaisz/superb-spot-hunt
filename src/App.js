@@ -8,6 +8,9 @@ class App extends React.Component {
       spots: [],
       searchField: ''
     };
+
+    // needs to bind it because JS by default doesn't set scope of this functions
+    this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
@@ -15,6 +18,10 @@ class App extends React.Component {
     .then(res => res.json())
     .then(users => this.setState({ spots:users }))
   }
+
+  handleChange = (event) => {
+    this.setState({searchField: event.target.value});
+  };
 
   render() {
     // here can apply function to add some features to the initial state
@@ -27,9 +34,8 @@ class App extends React.Component {
       <div className="App">
         <SearchBox
           placeholder="Search Spots"
-          handleChange={event => 
-            this.setState({searchField: event.target.value})
-          }
+          // needs to specify with this since handleChange is inside this class
+          handleChange={this.handleChange}
         />
         <CardList spots={filteredSpots}>
         </CardList>
