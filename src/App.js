@@ -16,6 +16,12 @@ class App extends React.Component {
   }
 
   render() {
+    // here can apply function to add some features to the initial state
+    const { spots, searchField } = this.state;
+    const filteredSpots = spots.filter(
+      spot => spot.name.toLowerCase().includes(searchField.toLowerCase())
+    )
+
     return (
       <div className="App">
         <input 
@@ -25,7 +31,7 @@ class App extends React.Component {
             this.setState({searchField: event.target.value})
           }}
         />
-        <CardList spots={this.state.spots}>
+        <CardList spots={filteredSpots}>
         </CardList>
       </div>
     )
