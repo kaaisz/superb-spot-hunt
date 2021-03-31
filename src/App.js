@@ -18,11 +18,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <CardList name="Kaai">
-          <h1>Kaai</h1> {/* this will be children of CardList */}
+          {
+            this.state.spots.map(spot => <p key={spot.id}>{ spot.address.city }</p>)
+          }
         </CardList>
-        {
-          this.state.spots.map(spot => <p key={spot.id}>{ spot.address.city }</p>)
-        }
       </div>
     )
   }
