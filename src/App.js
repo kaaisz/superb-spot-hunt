@@ -17,10 +17,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <CardList name="Kaai">
-          {
-            this.state.spots.map(spot => <p key={spot.id}>{ spot.address.city }</p>)
-          }
+        <CardList spots={this.state.spots}>
         </CardList>
       </div>
     )
