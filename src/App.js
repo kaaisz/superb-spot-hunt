@@ -1,6 +1,7 @@
 import React from 'react';
 import { CardList } from './components/card-list/card-list-component';
 import { SearchBox } from './components/search-box/search-box-component';
+import './app.scss';
 class App extends React.Component {
   constructor() {
     super();
@@ -32,6 +33,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
+        <h1>Breathtaking Sceneries</h1>
         <SearchBox
           placeholder="Search Spots"
           // needs to specify with this since handleChange is inside this class

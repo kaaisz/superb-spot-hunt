@@ -1,8 +1,8 @@
 .card-container {
     display: flex;
     flex-direction: column;
-    background-color: #95dada;
-    border: 1px solid grey;
+    background-color: #fafafa;
+    /* border: 1px solid #ebedf3; */
     border-radius: 5px;
     padding: 25px;
     cursor: pointer;
@@ -14,4 +14,5 @@
 
 .card-container:hover {
     transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
